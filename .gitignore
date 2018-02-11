@@ -237,3 +237,11 @@ typings/
 #=================================================
 .sass-cache/
 *.css.map
+
+
+####
+## Temporal Ignore while I set the dev flow with gulp and bunch of fancy stuff.
+####
+build/
+media/
+scr/
