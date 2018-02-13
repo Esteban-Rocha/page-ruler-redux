@@ -1,3 +1,9 @@
+####
+## Full Stack Web Developer - .gitattributes boiler template
+## @author Esteban Rocha
+## @website https://github.com/Esteban-Rocha
+####
+
 #common settings that generally should always be used with your language specific settings
 
 # Auto detect text files and perform LF normalization
@@ -80,9 +86,10 @@
 *.sass     text
 *.scm      text
 *.scss     text
-*.sh       text
+*.sh       text eol=lf
 *.sql      text
 *.styl     text
+*.tag      text
 *.ts       text
 *.tsx      text
 *.xml      text
@@ -136,6 +143,7 @@ TODO         text
 ## LINTERS
 .csslintrc    text
 .eslintrc     text
+.htmlhintrc   text
 .jscsrc       text
 .jshintrc     text
 .jshintignore text
@@ -150,7 +158,6 @@ TODO         text
 .editorconfig  text
 .gitattributes text
 .gitconfig     text
-.gitignore     text
 .htaccess      text
 *.npmignore    text
 *.yaml         text
@@ -209,6 +216,7 @@ Procfile    text
 *.mp4  binary
 *.mpeg binary
 *.mpg  binary
+*.ogv  binary
 *.swc  binary
 *.swf  binary
 *.webm binary
@@ -216,6 +224,7 @@ Procfile    text
 ## ARCHIVES
 *.7z  binary
 *.gz  binary
+*.jar binary
 *.rar binary
 *.tar binary
 *.zip binary
