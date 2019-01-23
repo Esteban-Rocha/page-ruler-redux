@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title data-message="optionsPageTitle">Page Ruler Options</title>
+	<link rel="stylesheet" type="text/css" href="options.css" />
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+<h1 data-message="optionsPageTitle">Page Ruler Options</h1>
+
+<form>
+
+	<div class="control-group">
+		<label data-message="optionsStatisticsLabel" for="statistics">Send Anonymous Usage Statistics:</label>
+		<input type="checkbox" id="statistics">
+		<span class="help" data-message="optionsStatisticsHelp">Information collected contains no personal information and is used solely for the purpose of improving this extension</span>
+	</div>
+
+	<div class="control-group">
+		<label data-message="optionsHideUpdateTabLabel" for="hide_update_tab">Do Not Show Update Tab:</label>
+		<input type="checkbox" id="hide_update_tab">
+		<span class="help" data-message="optionsHideUpdateTabHelp">Do not show the update tab whenever a new version of the extension is installed</span>
+	</div>
+
+</form>
+
+<script type="text/javascript" src="options.js"></script>
+
+</body>
+
+</html>

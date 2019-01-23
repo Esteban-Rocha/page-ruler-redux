@@ -1,0 +1,223 @@
+{
+
+	"extName": {
+		"message": "Page Ruler",
+		"description": "Extension name"
+	},
+
+	"extShortName": {
+		"message": "Page Ruler",
+		"description": "Extension short name (maximum 12 characters)"
+	},
+
+	"extDescription": {
+		"message": "Disegna una guida per ottenere le dimensioni e il posizionamento in pixel e misurare gli elementi su tutte le pagine web.",
+		"description": "Extension description"
+	},
+
+	"toolbarWidth": {
+		"message": "Larghezza",
+		"description": "Label for the width input in the toolbar"
+	},
+
+	"toolbarHeight": {
+		"message": "Altezza",
+		"description": "Label for the height input in the toolbar"
+	},
+
+	"toolbarLeft": {
+		"message": "Sinistra",
+		"description": "Label for the left input in the toolbar"
+	},
+
+	"toolbarRight": {
+		"message": "Destra",
+		"description": "Label for the right input in the toolbar"
+	},
+
+	"toolbarTop": {
+		"message": "Alto",
+		"description": "Label for the top input in the toolbar"
+	},
+
+	"toolbarBottom": {
+		"message": "Basso",
+		"description": "Label for the bottom input in the toolbar"
+	},
+
+	"toolbarColor": {
+		"message":	"Colore",
+		"description": "Label for the color picker in the toolbar"
+	},
+
+	"toolbarClose": {
+		"message": "Chiudi",
+		"description": "Tooltip for the toolbar close button which closes the addon"
+	},
+
+	"toolbarEnableElementMode": {
+		"message": "Abilita modalità elemento",
+		"description": "Label for the enable element mode button (element as in HTML element)"
+	},
+
+	"toolbarDisableElementMode": {
+		"message": "Disabilita modalità elemento",
+		"description": "Label for the disable element mode button (element as in HTML element)"
+	},
+
+	"elementToolbarHelp": {
+		"message": "Usa la modalità tracciamento per spostarti nella pagina e selezionare gli elementi. Clicca un elemento per disabilitare la modalità tracciamento.",
+		"description": "Help message for the element toolbar"
+	},
+
+	"elementToolbarHighlightedElement": {
+		"message": "Elemento selezionato",
+		"description": "Title for the highlighted element in tracking mode"
+	},
+
+	"elementToolbarParentNode": {
+		"message": "Nodo padre",
+		"description": "Title for the parent node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarChildNode": {
+		"message": "Nodo figlio",
+		"description": "Title for the child node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarPreviousSibling": {
+		"message": "Nodo di pari livello precedente",
+		"description": "Title for the previous sibling node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarNextSibling": {
+		"message": "Nodo di pari livello successivo",
+		"description": "Title for the next sibling node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarTrackingMode": {
+		"message": "Modalità tracciamento",
+		"description": "Label for the tracking mode toggle button"
+	},
+
+	"elementToolbarToggleOn": {
+		"message": "On",
+		"description": "The on state text for the tracking mode toggle button"
+	},
+
+	"elementToolbarToggleOff": {
+		"message": "Off",
+		"description": "The off state text for the tracking mode toggle button"
+	},
+
+	"optionsPageTitle": {
+		"message": "Opzioni Page Ruler",
+		"description": "Page title for the options page"
+	},
+
+	"optionsStatisticsLabel": {
+		"message": "Invia statistiche anonime:",
+		"description": "The label for the send anonymouse usage statistics checkbox"
+	},
+
+	"optionsStatisticsHelp": {
+		"message": "Le informazioni raccolte non contengono informazioni personali e saranno utilizzate esclusivamente per migliorare questa estensione tramite la visualizzazione delle sezioni utilizzate",
+		"description": "Message explaining how the anonymouse usage statistics is used"
+	},
+
+    "updatePageTitle": {
+        "message": "Page Ruler è stato aggiornato",
+        "desciption": "Page title for the update page"
+    },
+
+	"updatePageHeader": {
+		"message": "Page Ruler è stato aggiornato alla versione <span>$VERSION$</span>",
+		"description": "Header message for the page containing the new version number",
+		"placeholders": {
+			"version": {
+				"content": "$1",
+				"example": "2.0.1"
+			}
+		}
+	},
+
+    "updateContributeTitle": {
+        "message": "Contribuisci a Page Ruler",
+        "desciption": "Title for the contribute side box"
+    },
+
+    "updateTranslateTitle": {
+        "message": "Traduci",
+        "desciption": "Title for the translate section in the contribute side box"
+    },
+
+    "updateTranslateDescription": {
+        "message": "Vuoi usare Page Ruler nella tua lingua? Visita la <a href='https://github.com/wrakky/page-ruler'>pagina del progetto su GitHub</a> e segui le istruzioni su come inviare una traduzione.",
+        "desciption": "Description of how to find out how to contribute a translation"
+    },
+
+    "updateContributorsTitle": {
+        "message": "Hanno contribuito",
+        "desciption": "Title for the contributors side box"
+    },
+
+    "updateCodeTitle": {
+        "message": "Codice",
+        "desciption": "Title for the code section in the contributors side box"
+    },
+
+	"updateIconsTitle": {
+		"message": "Icone",
+		"desciption": "Title for the icons section in the contributors side box"
+	},
+
+    "updateTranslationsTitle": {
+        "message": "Traduzioni",
+        "desciption": "Title for the translations section in the contributors side box"
+    },
+
+    "updateHistoryTitle": {
+        "message": "Cosa c'è di nuovo?",
+        "desciption": "Title for the update history section"
+    },
+
+	"errorLocal": {
+		"message": "L'estensione non può essere eseguita nelle pagine locali di chrome per motivi di sicurezza",
+		"description": "Error message to show when someone tries to run the extension in a chrome extension page"
+	},
+
+	"errorWebStore": {
+		"message": "L'estensione non può essere eseguita nel chrome web store per motivi di sicurezza",
+		"description": "Error message to show when someone tries to run the extension in a the chrome web store"
+	},
+
+	// version 2.0.3
+
+	"updatePageHeaderInstall": {
+		"message": "Grazie per aver installato Page Ruler!",
+		"description": "Header message for the update page when a new user installs it"
+	},
+
+	"updateDoNotShowPageAgain": {
+		"message": "Non mostrare di nuovo questa pagina",
+		"description": "Label for the do not show this page again checkbox on the update page"
+	},
+
+	"optionsHideUpdateTabLabel": {
+		"message": "Non mostrare la scheda aggiornamenti:",
+		"description": "The label for the do not show update tab checkbox"
+	},
+
+	"optionsHideUpdateTabHelp": {
+		"message": "Non mostrare la scheda aggiornamenti quando viene installata una nuova versione dell'estensione",
+		"description": "Message explaining how the do not show update tab checkbox is used"
+	},
+
+	// version 2.0.4
+
+	"updateTip": {
+		"message": "Consiglio: Usa la scorciatoia Alt+P per abilitare e disabilitare Page Ruler, oppure assegna una differente scorciatoia dalla sezione Scorciatoie da tastiera nella scheda Estensioni",
+		"description": "Message informing users about the shortcut key"
+	}
+
+}

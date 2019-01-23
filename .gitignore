@@ -1,18 +1,72 @@
 ####
-## Full Stack Developer - .gitignore boiler template
+## Full Stack Web - .gitignore boiler template
 ## @author Esteban Rocha
 ## @website https://github.com/Esteban-Rocha
 ####
 
 #=================================================
+# WordPress
+#=================================================
+
+*.log
+wp-config*.php
+wp-cli.local.yml
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/backupwordpress-*/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+.ftpquota
+
+#=================================================
+# WPEngine
+#=================================================
+.smushit-status
+_wpeprivate
+wp-content/object-cache.php
+wp-content/mu-plugins/mu-plugin.php
+wp-content/mu-plugins/slt-force-strong-passwords.php
+wp-content/mu-plugins/stop-long-comments.php
+wp-content/mu-plugins/force-strong-passwords*
+wp-content/mu-plugins/wpengine-common*
+
+#=================================================
+# Pantheon
+#=================================================
+# Avoid accidental modification of pantheon.upstream.yml in sites
+# created from this upstream
+pantheon.upstream.yml
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+#=================================================
 # Custom
 #=================================================
-####
-## Temporal Ignore while I set the dev flow with gulp and bunch of fancy stuff.
-####
-build/
-media/
-scr/
+yarn-install
 
 #=================================================
 # Archives
@@ -47,6 +101,15 @@ scr/
 *.msp
 
 #=================================================
+# Backups
+#=================================================
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+
+#=================================================
 # GPG
 #=================================================
 ##Just in case
@@ -58,34 +121,45 @@ secring.*
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# User-specific stuff:
+# User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
-.idea/dictionaries
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
 
-# Sensitive or high-churn files:
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
 .idea/**/dataSources/
 .idea/**/dataSources.ids
 .idea/**/dataSources.local.xml
 .idea/**/sqlDataSources.xml
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
 
-# Gradle:
+# Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
 
-# CMake
-cmake-build-debug/
-cmake-build-release/
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
 
-# Mongo Explorer plugin:
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin
 .idea/**/mongoSettings.xml
 
-## File-based project format:
+# File-based project format
 *.iws
-
-## Plugin-specific files:
 
 # IntelliJ
 out/
@@ -104,6 +178,12 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
 
 #=================================================
 # Linux
@@ -214,7 +294,6 @@ cscope.out
 cscope.in.out
 cscope.po.out
 
-
 #=================================================
 # Vagrant
 #=================================================
@@ -230,7 +309,8 @@ cscope.po.out
 # Swap
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]
-[._]s[a-v][a-z]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
 [._]sw[a-p]
 
 # Session
@@ -241,6 +321,8 @@ Session.vim
 *~
 # Auto-generated tag files
 tags
+# Persistent undo
+[._]*.un~
 
 #=================================================
 # Visual Studio Code
@@ -250,6 +332,33 @@ tags
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+#=================================================
+# XCode
+#=================================================
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
 
 #=================================================
 # Windows
@@ -312,7 +421,7 @@ coverage
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
 # Bower dependency directory (https://bower.io/)
@@ -328,7 +437,7 @@ build/Release
 node_modules/
 jspm_packages/
 
-# Typescript v1 declaration files
+# TypeScript v1 declaration files
 typings/
 
 # Optional npm cache directory
@@ -348,12 +457,33 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.test
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
 
 # next.js build output
 .next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
 
 #=================================================
 # Sass
 #=================================================
 .sass-cache/
 *.css.map
+*.sass.map
+*.scss.map

@@ -1,0 +1,363 @@
+{
+
+	"extName": {
+		"message": "Page Ruler",
+		"description": "اسم الإضافة"
+	},
+
+	"extShortName": {
+		"message": "Page Ruler",
+		"description": "الاسم المختصر للإضافة"
+	},
+
+	"extDescription": {
+		"message": "Draw a ruler to get pixel dimensions and positioning, and measure elements on any web page.",
+		"description": "وصف الإضافة"
+	},
+
+	"toolbarWidth": {
+		"message": "عرض",
+		"description": "Label for the width input in the toolbar"
+	},
+
+	"toolbarHeight": {
+		"message": "طول",
+		"description": "Label for the height input in the toolbar"
+	},
+
+	"toolbarLeft": {
+		"message": "يسار",
+		"description": "Label for the left input in the toolbar"
+	},
+
+	"toolbarRight": {
+		"message": "يمين",
+		"description": "Label for the right input in the toolbar"
+	},
+
+	"toolbarTop": {
+		"message": "فوق",
+		"description": "Label for the top input in the toolbar"
+	},
+
+	"toolbarBottom": {
+		"message": "تحت",
+		"description": "Label for the bottom input in the toolbar"
+	},
+
+	"toolbarColor": {
+		"message":	"لون",
+		"description": "Label for the color picker in the toolbar"
+	},
+
+	"toolbarClose": {
+		"message": "غلق",
+		"description": "Tooltip for the toolbar close button which closes the addon"
+	},
+
+	"toolbarEnableElementMode": {
+		"message": "Enable Element Mode",
+		"description": "Label for the enable element mode button (element as in HTML element)"
+	},
+
+	"toolbarDisableElementMode": {
+		"message": "Disable Element Mode",
+		"description": "Label for the disable element mode button (element as in HTML element)"
+	},
+
+	"elementToolbarHelp": {
+		"message": "Use tracking mode to move over the page and highlight elements. Click an element to disable tracking mode.",
+		"description": "Help message for the element toolbar"
+	},
+
+	"elementToolbarHighlightedElement": {
+		"message": "Highlighted element",
+		"description": "Title for the highlighted element in tracking mode"
+	},
+
+	"elementToolbarParentNode": {
+		"message": "عقدة أصل",
+		"description": "Title for the parent node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarChildNode": {
+		"message": "عقدة فرع",
+		"description": "Title for the child node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarPreviousSibling": {
+		"message": "Previous sibling node",
+		"description": "Title for the previous sibling node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarNextSibling": {
+		"message": "Next sibling node",
+		"description": "Title for the next sibling node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarTrackingMode": {
+		"message": "وضع التتبع",
+		"description": "Label for the tracking mode toggle button"
+	},
+
+	"elementToolbarToggleOn": {
+		"message": "مفَعَّـل",
+		"description": "The on state text for the tracking mode toggle button"
+	},
+
+	"elementToolbarToggleOff": {
+		"message": "غير مفعل",
+		"description": "The off state text for the tracking mode toggle button"
+	},
+
+	"optionsPageTitle": {
+		"message": "Page Ruler Options",
+		"description": "Page title for the options page"
+	},
+
+	"optionsStatisticsLabel": {
+		"message": "إرسال إحصائيات الاستعمال بصفة مجهول:",
+		"description": "The label for the send anonymouse usage statistics checkbox"
+	},
+
+	"optionsStatisticsHelp": {
+		"message": "Information collected contains no personal information and is used solely for the purpose of improving this extension by seeing which sections are used",
+		"description": "Message explaining how the anonymouse usage statistics is used"
+	},
+
+    "updatePageTitle": {
+        "message": "Page Ruler Updated",
+        "desciption": "Page title for the update page"
+    },
+
+	"updatePageHeader": {
+		"message": "Page Ruler has been updated to version <span>$VERSION$</span>",
+		"description": "Header message for the page containing the new version number",
+		"placeholders": {
+			"version": {
+				"content": "$1",
+				"example": "2.0.1"
+			}
+		}
+	},
+
+    "updateContributeTitle": {
+        "message": "Contribute to Page Ruler",
+        "desciption": "Title for the contribute side box"
+    },
+
+    "updateTranslateTitle": {
+        "message": "ترجم",
+        "desciption": "Title for the translate section in the contribute side box"
+    },
+
+    "updateTranslateDescription": {
+        "message": "Want to use Page Ruler in your own language? Visit the <a href='https://github.com/wrakky/page-ruler'>GitHub project page</a> and follow the instructions on how to submit a translation.",
+        "desciption": "Description of how to find out how to contribute a translation"
+    },
+
+    "updateContributorsTitle": {
+        "message": "المساهمون",
+        "desciption": "Title for the contributors side box"
+    },
+
+    "updateCodeTitle": {
+        "message": "Code",
+        "desciption": "Title for the code section in the contributors side box"
+    },
+
+	"updateIconsTitle": {
+		"message": "أيقونات",
+		"desciption": "Title for the icons section in the contributors side box"
+	},
+
+    "updateTranslationsTitle": {
+        "message": "ترجمات",
+        "desciption": "Title for the translations section in the contributors side box"
+    },
+
+    "updateHistoryTitle": {
+        "message": "التحديثات الأخيرة",
+        "desciption": "Title for the update history section"
+    },
+
+	"errorLocal": {
+		"message": "Extensions cannot run in local chrome pages for security reasons",
+		"description": "Error message to show when someone tries to run the extension in a chrome extension page"
+	},
+
+	"errorWebStore": {
+		"message": "Extensions cannot run in the chrome web store for security reasons",
+		"description": "Error message to show when someone tries to run the extension in a the chrome web store"
+	},
+
+	// version 2.0.3
+
+	"updatePageHeaderInstall": {
+		"message": "Thank you for installing Page Ruler!",
+		"description": "Header message for the update page when a new user installs it"
+	},
+
+	"updateDoNotShowPageAgain": {
+		"message": "لا تظهر هذه الصفحة مجددا",
+		"description": "Label for the do not show this page again checkbox on the update page"
+	},
+
+	"optionsHideUpdateTabLabel": {
+		"message": "لا تظهر تبويب التحديث:",
+		"description": "The label for the do not show update tab checkbox"
+	},
+
+	"optionsHideUpdateTabHelp": {
+		"message": "Do not show the update tab whenever a new version of the extension is installed",
+		"description": "Message explaining how the do not show update tab checkbox is used"
+	},
+
+	// version 2.0.4
+
+	"updateTip": {
+		"message": "<b>Extra Tip:</b> Use the Alt+P shortcut to enable and disable Page Ruler, or assign a different shortcut from the Keyboard Shortcuts section in the Extensions tab",
+		"description": "Message informing users about the shortcut key"
+	},
+
+	// version 2.0.6
+
+	"toolbarDockBottom": {
+		"message": "Dock toolbar to the bottom of the page",
+		"description": "Tooltip for the dock bottom image"
+	},
+
+	"toolbarDockTop": {
+		"message": "Dock toolbar to the top of the page",
+		"description": "Tooltip for the dock top image"
+	},
+
+	"updateKeyBoardShortcuts": {
+		"message": "اختصارات لوحة المفاتيح",
+		"description": "The title for the keyboard shortcuts section"
+	},
+
+	"updateKeyboardShortcutsToggle": {
+		"message": "<b>Alt + P:</b> Enable / Disable Page Ruler",
+		"description": "The Alt + P shortcut description"
+	},
+
+	"updateKeyboardShortcutsRuler": {
+		"message": "مسطرة",
+		"description": "Title for the ruler arrow keys section"
+	},
+
+	"updateKeyboardShortcutsRulerKeys": {
+		"message": "<b>Arrow keys:</b> Move the ruler by 1 pixel in any direction",
+		"description": "Arrow keys shortcut description"
+	},
+
+	"updateKeyboardShortcutsRulerShift": {
+		"message": "<b>+ Shift:</b> Move the ruler by 10 pixels",
+		"description": "Arrow keys + Shift shortcut description"
+	},
+
+	"updateKeyboardShortcutsRulerCtrl": {
+		"message": "<b>+ Ctrl:</b> Expand the ruler outwards by 1 pixel",
+		"description": "Arrow keys + Ctrl shortcut description"
+	},
+
+	"updateKeyboardShortcutsRulerShiftCtrl": {
+		"message": "<b>+ Shift + Ctrl:</b> Expand the ruler outwards by 10 pixels",
+		"description": "Arrow keys + Shift + Ctrl shortcut description"
+	},
+
+	"updateKeyboardShortcutsRulerCtrlAlt": {
+		"message": "<b>+ Ctrl + Alt:</b> Shrink the ruler inwards by 1 pixel",
+		"description": "Arrow keys _Ctrl + Alt shortcut description"
+	},
+
+	"updateKeyboardShortcutsRulerShiftCtrlAl": {
+		"message": "<b>+ Shift + Ctrl + Alt:</b> Shrink the ruler inwards by 10 pixels",
+		"description": "Arrow keys + Shift + Alt shortcut description"
+	},
+
+	"updateKeyboardShortcutsToolbar": {
+		"message": "Toolbar Inputs",
+		"description": "Title for toolbar inputs shortcut keys section"
+	},
+
+	"updateKeyboardShortcutsToolbarUp": {
+		"message": "<b>Up Key:</b> Increase the value by 1",
+		"description": "Up key input shortcut description"
+	},
+
+	"updateKeyboardShortcutsToolbarUpShift": {
+		"message": "<b>+ Shift:</b> Increase the value by 10",
+		"description": "Up key + Shift input shortcut description"
+	},
+
+	"updateKeyboardShortcutsToolbarDown": {
+		"message": "<b>Down Key:</b> Decrease the value by 1",
+		"description": "Down key input shortcut description"
+	},
+
+	"updateKeyboardShortcutsToolbarDownShift": {
+		"message": "<b>+ Shift:</b> Decrease the value by 10",
+		"description": "Down key + Shift input shortcut description"
+	},
+
+	// version 2.0.7
+
+	"toolbarGuides": {
+		"message":	"Show Guides",
+		"description": "Label for the show guides toggle in the toolbar"
+	},
+
+	// version 2.0.9
+	"toolbarHelp": {
+		"message": "Show help and information",
+		"description": "Lable for the help button in the toolbar"
+	},
+
+	"updateKeyBoardShortcutsGeneral": {
+		"message": "اختصارات عامة",
+		"description": "Title for general shortcuts section"
+	},
+
+	"updateReportIssue": {
+		"message": "Report an Issue or Make Suggestion",
+		"description": "Report issue button text"
+	},
+
+	"updateSupportTitle": {
+		"message": "Support Page Ruler",
+		"description": "Support section title"
+	},
+
+	"updateSupportText": {
+		"message": "Page Ruler is and always will be <b>free</b>. If you have a spare moment please support it by leaving a review and letting everyone else know what a great and useful tool it is.",
+		"description": "Support section text"
+	},
+
+	"updateSupportText2": {
+		"message": "If you are feeling especially awesome and generous, some users have asked if they can make a donation to say thanks for Page Ruler. I would rather any money went to a cause more worthy than myself so if you would like to say thank you at the same time as helping a charity that is close to my heart it would make my day :)",
+		"description": "Second line of the support section text"
+	},
+
+	"updateSupportReviewText": {
+		"message": "Leave a Review",
+		"description": "Leave review button text"
+	},
+
+	"updateSupportDonateText": {
+		"message": "اقرأ المزيد وتبرغ",
+		"description": "Donate button text"
+	},
+
+	"updateOtherExtensionsText": {
+		"message": "ملحقاتي الأخرى",
+		"description": "Other extensions section title"
+	},
+
+	"updatePageTitleInstall": {
+		"message": "Page Ruler Installed",
+		"description": "Page title for the install page"
+	}
+
+}

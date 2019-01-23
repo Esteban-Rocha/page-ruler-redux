@@ -1,0 +1,217 @@
+{
+
+        "extName": {
+                "message": "Page Ruler",
+                "description": "Nom de l'extension"
+        },
+
+        "extShortName": {
+                "message": "Page Ruler",
+                "description": "Nom abrégé de l'extension (12 caractères au maximum)"
+        },
+
+        "extDescription": {
+                "message": "Dessine une règle pour mesurer les dimensions ainsi que les positions, et mesure aussi les éléments de n'importe quelle page web.",
+                "description": "Description de l'extension"
+        },
+
+        "toolbarWidth": {
+                "message": "Largeur",
+                "description": "Etiquette pour l'affichage de la largeur dans la barre"
+        },
+
+        "toolbarHeight": {
+                "message": "Hauteur",
+                "description": "Etiquette pour l'affichage de la hauteur dans la barre"
+        },
+
+        "toolbarLeft": {
+                "message": "Gauche",
+                "description": "Etiquette pour l'affichage de la position à gauche dans la barre"
+        },
+
+        "toolbarRight": {
+                "message": "Droite",
+                "description": "Etiquette pour l'affichage de la position à droite dans la barre"
+        },
+
+        "toolbarTop": {
+                "message": "Haut",
+                "description": "Etiquette pour l'affichage de la position en haut dans la barre"
+        },
+
+        "toolbarBottom": {
+                "message": "Bas",
+                "description": "Etiquette pour l'affichage de la position en bas dans la barre"
+        },
+
+        "toolbarColor": {
+                "message":        "Couleur",
+                "description": "Etiquette  du sélecteur de couleur dans la barre d'outils"
+        },
+
+        "toolbarClose": {
+                "message": "Fermer",
+                "description": "Bouton de fermeture de la barre d'outils pour fermer le module"
+        },
+
+        "toolbarEnableElementMode": {
+                "message": "Activer le mode Element",
+                "description": "Label du bouton d'activation du mode Element (elements des tags HTML)"
+        },
+
+        "toolbarDisableElementMode": {
+                "message": "Désactiver le mode Element",
+                "description": "Label du bouton de désactivation du mode Element (elements des tags HTML)"
+        },
+
+        "elementToolbarHelp": {
+                "message": "Utilisez le mode exploration pour se déplacer sur la page et les éléments en surbrillance. Cliquez sur un élément pour désactiver le mode exploration.",
+                "description": "Message d'aide de la barre d'outils"
+        },
+
+        "elementToolbarHighlightedElement": {
+                "message": "Elément en surbrillance",
+                "description": "Titre de l'élément en surbrillance en mode exploration"
+        },
+
+        "elementToolbarParentNode": {
+                "message": "Noeud parent",
+                "description": "Titre du noeud parent de l'élément en surbrillance en mode exploration"
+        },
+
+        "elementToolbarChildNode": {
+                "message": "Noeud enfant",
+                "description": "Titre du noeud enfant de l'élément en surbrillance en mode exploration"
+        },
+
+        "elementToolbarPreviousSibling": {
+                "message": "Noeud frère précédent",
+                "description": "Titre du nœud frère qui précéde l'élément en surbrillance dans le mode exploration"
+        },
+
+        "elementToolbarNextSibling": {
+                "message": "Noeud frère suivant",
+                "description": "Titre du nœud frère qui suit l'élément en surbrillance dans le mode exploration"
+        },
+
+        "elementToolbarTrackingMode": {
+                "message": "Mode exploration",
+                "description": "Etiquette du bouton d'activation du mode exploration"
+        },
+
+        "elementToolbarToggleOn": {
+                "message": "On",
+                "description": "Texte du bouton d'activation du mode exploration en posision on"
+        },
+
+        "elementToolbarToggleOff": {
+                "message": "Off",
+                "description": "Texte du bouton d'activation du mode exploration en posision off"
+        },
+
+        "optionsPageTitle": {
+                "message": "Options de Page Ruler",
+                "description": "Titre de la page des options"
+        },
+
+        "optionsStatisticsLabel": {
+                "message": "Envoyer Anonymement des Statistiques d'utilisation:",
+                "description": "L'étiquette de la case à cocher pour l'envoie anonyme de statistiques d'utilisation"
+        },
+
+        "optionsStatisticsHelp": {
+
+                "message": "L'information collectée ne contient aucune information privée et n'est utilisée que dans l'objectif d'améliorer cette extension afin d'identifier quelles en sont les parties utilisées",
+                "description": "Message qui explique comment les statistiques anonymes d'utilisation sont exploitées"
+        },
+
+    "updatePageTitle": {
+        "message": "Page Ruler a été mis à jour",
+        "desciption": "Titre de la page de mise à jour"
+    },
+
+        "updatePageHeader": {
+                "message": "Page Ruler a été mis à jour vers la version <span>$VERSION$</span>",
+                "description": "Message d'entête de la page qui contient le numéro de la nouvelle version",
+                "placeholders": {
+                        "version": {
+                                "content": "$1",
+                                "exemple": "2.0.1"
+                        }
+                }
+        },
+
+    "updateContributeTitle": {
+        "message": "Contribuez à Page Ruler",
+        "desciption": "Titre de la boîte latérale de contribution"
+    },
+
+    "updateTranslateTitle": {
+        "message": "Traduire",
+        "desciption": "Titre de la section de traduction dans la zone latérale de Contribution"
+    },
+
+    "updateTranslateDescription": {
+        "message": "Vous souhaitez utiliser Page Ruler dans votre propre langue? Visitez la page <a href='https://github.com/wrakky/page-ruler'>GitHub project page</a> et suivez les instructions sur la façon de soumettre une traduction.",
+        "desciption": "Description de la procédure pour contribuer à une traduction"
+    },
+
+    "updateContributorsTitle": {
+        "message": "Contributeurs",
+        "desciption": "Titre de la boîte latérale à l'attention des contributeurs"
+    },
+
+    "updateCodeTitle": {
+        "message": "Code",
+        "desciption": "Titre pour la section code de la boîte latérale des contibuteurs"
+    },
+
+        "updateIconsTitle": {
+                "message": "Icons",
+                "desciption": "Titre pour la section icons de la boîte latérale des contibuteurs"
+        },
+
+    "updateTranslationsTitle": {
+        "message": "Traductions",
+        "desciption": "Titre pour la section traduction de la boîte latérale des contibuteurs"
+    },
+
+    "updateHistoryTitle": {
+        "message": "Quoi de Nouveau?",
+        "desciption": "Titre de la section de l'historique des mises à jour"
+    },
+
+        "errorLocal": {
+                "message": "Les extensions ne peuvent pas s'exécuter dans les pages locales de chrome pour des raisons de sécurité",
+                "description": "Message d'erreur à faire apparaître lorsqu'on essaie d'exécuter l'extension dans une page d'extension chrome"
+        },
+
+        "errorWebStore": {
+                "message": "Les extensions ne peuvent pas s'exécuter dans le web store chrome pour des raisons de sécurité",
+                "description": "Message d'erreur à faire apparaître lorsqu'on essaie d'exécuter l'extension dans le web store chrome"
+        },
+
+
+
+        "updatePageHeaderInstall": {
+                "message": "Merci d'avoir installé Page Ruler!",
+                "description": "Message d'entête de la page de mise à jour quand un nouvel utilisateur procède à l'installation "
+        },
+
+        "updateDoNotShowPageAgain": {
+                "message": "Ne plus afficher cette page à nouveau",
+                "description": "Etiquette de la case à cliquer pour ne plus afficher cette page dans la page de mise à jour"
+        },
+
+        "optionsHideUpdateTabLabel": {
+                "message": "Ne pas afficher l'Onglet de Mise à jour:",
+                "description": "L'étiquette de la case à cocher qui concerne l'affichage de l'onglet mise à jour"
+        },
+
+        "optionsHideUpdateTabHelp": {
+                "message": "Ne pas afficher l'onglet mise à jour chaque fois qu'une nouvelle version de l'extension est installée",
+                "description": "Message qui indique comment l'onglet d'affichage d'une mise à jour est utilisé"
+        }
+
+}

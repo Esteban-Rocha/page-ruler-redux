@@ -1,0 +1,12 @@
+####
+## ESLint: Ignore files
+##
+## @author      Esteban Rocha
+## @link        https://github.com/Esteban-Rocha
+## @since       1.0.0
+####
+
+# Global ignore
+**/*.min.js
+**/node_modules/**
+**/vendor/**

@@ -1,0 +1,15 @@
+{
+	"name": "page-ruler-redux",
+	"version": "1.0.0",
+	"description": "Page Ruler Redux",
+	"main": "index.js",
+	"repository": "https://github.com/Esteban-Rocha/page-ruler-redux",
+	"author": "Esteban Rocha <esteban@rocha.codes>",
+	"license": "MIT",
+	"private": true,
+	"dependencies": {
+		"eslint": "^5.9.0",
+		"eslint-config-airbnb-base": "^13.1.0",
+		"eslint-plugin-import": "^2.14.0"
+	}
+}

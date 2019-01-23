@@ -1,5 +1,9 @@
 #=================================================
 # Multi purpose .editorconfig template
+#
+# @author      Esteban Rocha
+# @link        https://github.com/Esteban-Rocha
+# @since       1.0.0
 #=================================================
 # This file is for unifying the coding style for different editors and IDEs
 # editorconfig.org
@@ -29,6 +33,6 @@ indent_style = space
 
 # For specific config files use:
 ## Matches the exact files either package.json || .travis.yml || webpack.config.js
-[{gulpfile.js,package.json,.travis.yml,webpack.config.js}]
-indent_size  = 2
-indent_style = tab
+# [{gulpfile.js,package.json,.travis.yml,webpack.config.js}]
+# indent_size  = 2
+# indent_style = space

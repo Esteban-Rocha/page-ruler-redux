@@ -1,10 +1,16 @@
 ####
-## Full Stack Web Developer - .gitattributes boiler template
+## Full Stack Web - .gitattributes boiler template
 ## @author Esteban Rocha
 ## @website https://github.com/Esteban-Rocha
 ####
 
 #common settings that generally should always be used with your language specific settings
+
+# Auto detect text files and perform LF normalization
+# http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
+* text=auto
+
+# Common settings that generally should always be used with your language specific settings
 
 # Auto detect text files and perform LF normalization
 # http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
@@ -69,8 +75,8 @@
 *.bat      text eol=crlf
 *.coffee   text
 *.css      text
-*.htm      text
-*.html     text
+*.htm      text diff=html
+*.html     text diff=html
 *.inc      text
 *.ini      text
 *.js       text
@@ -79,10 +85,10 @@
 *.less     text
 *.od       text
 *.onlydata text
-*.php      text
+*.php      text diff=php
 *.pl       text
-*.py       text
-*.rb       text
+*.py       text diff=python
+*.rb       text diff=ruby
 *.sass     text
 *.scm      text
 *.scss     text
@@ -92,14 +98,16 @@
 *.tag      text
 *.ts       text
 *.tsx      text
+*.vue      text
 *.xml      text
-*.xhtml    text
+*.xhtml    text diff=html
 
 ## DOCKER
 *.dockerignore    text
 Dockerfile    text
 
 ## DOCUMENTATION
+*.ipynb      text
 *.markdown   text
 *.md         text
 *.mdwn       text
@@ -154,11 +162,14 @@ TODO         text
 *.cnf          text
 *.conf         text
 *.config       text
+.babelrc       text
 .browserslistrc    text
 .editorconfig  text
+.env           text
 .gitattributes text
 .gitconfig     text
 .htaccess      text
+*.lock         text
 *.npmignore    text
 *.yaml         text
 *.yml          text
