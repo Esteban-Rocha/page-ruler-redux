@@ -9,24 +9,6 @@
 // @since       1.0.0
 //
 
-html {
-	box-sizing: border-box;
-	font-size: 16px; // Explicit declare REM's
-}
-
-*,
-*::before,
-*::after {
-	// Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ //
-	box-sizing: inherit;
-}
-
-* {
-	&:focus {
-		outline: 0;
-	}
-}
-
 //
 // System Font Stack.
 //
@@ -37,58 +19,10 @@ html {
 //   	font-family: $system-fonts;
 //   }
 //
-$system-fonts: "-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue",
-	"Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+// Use Fura code for dev's who had it 🍺
+//
+$system-fonts: "FuraCode Nerd Font", "-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI",
+	"Helvetica Neue", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
-$system-fonts-mono: "SFMono-Regular", "Ubuntu Mono", "Consolas", "DejaVu Sans Mono", "Menlo",
-	"monospace" !default;
-
-body {
-	background: #fff; // Fallback for when there is no custom background color defined. //
-	font: {
-		family: font-f(poppins, regular);
-		style: normal;
-		weight: normal;
-	}
-	margin: 0;
-}
-
-a {
-	&:hover {
-		text: {
-			decoration: none;
-		}
-	}
-}
-
-img {
-	height: auto; // Make sure images are scaled correctly. //
-	max-width: 100%; // Adhere to container width. //
-}
-
-figure {
-	margin: 0; // no need or want margins on figures
-}
-
-// Customize scrollbar for webkit browsers, Chrome <-> Safari
-$scrollIndex: 99;
-$scrollTickness: 8px;
-
-::-webkit-scrollbar {
-	height: $scrollTickness; // for horizontal scrollbars //
-	width: $scrollTickness; // for vertical scrollbars //
-	z-index: $scrollIndex;
-}
-
-::-webkit-scrollbar-track {
-	background: #eeeeee;
-	z-index: $scrollIndex;
-}
-
-::-webkit-scrollbar-thumb {
-	background: rgba(0, 0, 0, 0.5);
-	z-index: $scrollIndex;
-}
-
-// Custom base element styling
-@import "custom/custom";
+$system-fonts-mono: "FuraCode Nerd Font", "SFMono-Regular", "Ubuntu Mono", "Consolas",
+	"DejaVu Sans Mono", "Menlo", "monospace" !default;

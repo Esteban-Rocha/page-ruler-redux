@@ -6,7 +6,7 @@
 	outline: 0 !important;
 	vertical-align: baseline !important;
 	font-size: 12px !important;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-family: $system-fonts !important;
 	font-style: normal !important;
 	font-variant: normal !important;
 	font-weight: normal !important;
@@ -121,7 +121,7 @@ input[id^="page-ruler"][type="checkbox"] {
 	line-height: 24px !important;
 	font-size: 12px !important;
 	color: #ffffff !important;
-	font-family: Trebuchet, Arial, sans-serif !important;
+	font-family: $system-fonts !important;
 	font-weight: bold !important;
 	-webkit-box-sizing: border-box !important;
 	-moz-box-sizing: border-box !important;
@@ -197,7 +197,7 @@ input[id^="page-ruler"][type="checkbox"] {
 }
 #page-ruler-toolbar input[type="number"] {
 	background-color: #fff !important;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-family: $system-fonts !important;
 	max-height: 20px !important;
 	padding: 3px !important;
 	text-align: right !important;

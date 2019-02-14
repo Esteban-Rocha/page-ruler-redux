@@ -30,7 +30,6 @@ Text Domain: Page Ruler Redux
 // 3. Base stuff // @import "base/default";
 @import "base/root"; // Standard reset and base settings
 @import "base/typography";
-@import "base/accessibility";
 
 // Old CSS @REFACTOR: I'm converting this into SASS modules <2019-02-13:eRocha>
 @import "base/legacy";

@@ -3,10 +3,10 @@ Theme Name: Esteban Rocha Portfolio
 Theme URI: https://rocha.codes/
 Author: Esteban Rocha
 Author URI: https://rocha.codes/
-Description: Custom theme for Page Ruler Redux
+Description: Custom theme for erocha
 Version: 1.0.0
 License URI: LICENSE
-Text Domain: Page Ruler Redux
+Text Domain: erocha
 */
 
 //
@@ -25,7 +25,7 @@ Text Domain: Page Ruler Redux
 @import "mixins/utils";
 
 // 2. Vendors // @import "vendors/default";
-// @import "vendors/sanitize"; // Sanitize.css
+@import "vendors/sanitize"; // Sanitize.css
 
 // 3. Base stuff // @import "base/default";
 @import "base/root"; // Standard reset and base settings
