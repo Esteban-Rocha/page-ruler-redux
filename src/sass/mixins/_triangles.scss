@@ -1,0 +1,64 @@
+//
+// Triangles mixing to create any size triangle
+//
+// @package     Page Ruler Redux
+// @subpackage  Mixins
+// @author      Esteban Rocha
+// @link        https://github.com/Esteban-Rocha
+// @since       1.0.0
+//
+// @mixin   triangle($direction, $size, $color)
+// @param   string $key => color
+// @return  map-get(map-get($colors, $key), $tone);
+//
+
+@mixin triangle($direction, $size, $color) {
+	@if $direction == "bottom" {
+		border-left: #{$size}px solid transparent;
+		border-right: #{$size}px solid transparent;
+		border-top: #{$size}px solid #{$color};
+	} @else if $direction == "left" {
+		border-bottom: #{$size}px solid transparent;
+		border-right: #{$size}px solid #{$color};
+		border-top: #{$size}px solid transparent;
+	} @else if $direction == "right" {
+		border-bottom: #{$size}px solid transparent;
+		border-left: #{$size}px solid #{$color};
+		border-top: #{$size}px solid transparent;
+	} @else if $direction == "top" {
+		border-bottom: #{$size}px solid #{$color};
+		border-left: #{$size}px solid transparent;
+		border-right: #{$size}px solid transparent;
+	} @else {
+		@warn "Unknown `#{$direction}` in triangle.";
+	}
+	height: 0;
+	width: 0;
+}
+
+//================================================
+// Isosceles triangle
+//================================================
+@mixin triangle-isos($direction, $size, $sizes, $color) {
+	@if $direction == "bottom" {
+		border-left: #{$sizes}px solid transparent;
+		border-right: #{$sizes}px solid transparent;
+		border-top: #{$size}px solid #{$color};
+	} @else if $direction == "left" {
+		border-bottom: #{$sizes}px solid transparent;
+		border-right: #{$size}px solid #{$color};
+		border-top: #{$sizes}px solid transparent;
+	} @else if $direction == "right" {
+		border-bottom: #{$sizes}px solid transparent;
+		border-left: #{$size}px solid #{$color};
+		border-top: #{$sizes}px solid transparent;
+	} @else if $direction == "top" {
+		border-bottom: #{$size}px solid #{$color};
+		border-left: #{$sizes}px solid transparent;
+		border-right: #{$sizes}px solid transparent;
+	} @else {
+		@warn "Unknown `#{$direction}` in triangle.";
+	}
+	height: 0;
+	width: 0;
+}

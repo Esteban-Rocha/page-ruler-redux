@@ -1,0 +1,24 @@
+//
+// Utilities Mixins
+//
+// @package     Page Ruler Redux
+// @subpackage  Mixins
+// @author      Esteban Rocha
+// @link        https://github.com/Esteban-Rocha
+// @since       1.0.0
+//
+
+// @mixin Developer basic flex highlighter for chrome
+// Firefox has advanced built-in flex and grix inspectors
+@mixin flex-inspector {
+	outline: 1px solid #dc143c;
+
+	> * {
+		outline: 1px dashed #4b0082;
+	}
+}
+
+// @func Featured image height calc
+@function milestone-featimg-heightratio($height) {
+	@return ($height + 70px) * -1;
+}

@@ -1,0 +1,41 @@
+/*!
+Theme Name: Esteban Rocha Portfolio
+Theme URI: https://rocha.codes/
+Author: Esteban Rocha
+Author URI: https://rocha.codes/
+Description: Custom theme for Page Ruler Redux
+Version: 1.0.0
+License URI: LICENSE
+Text Domain: Page Ruler Redux
+*/
+
+//
+// Sass Architecture - The 7-1 pattern
+// @link https://sass-guidelin.es/#architecture
+//
+
+// 1. Configuration and helpers // @import "mixins/default";
+@import "mixins/borders";
+@import "mixins/color";
+@import "mixins/fluid--type";
+@import "mixins/fonts";
+@import "mixins/map--colors";
+@import "mixins/placeholders";
+@import "mixins/triangles";
+@import "mixins/utils";
+
+// 2. Vendors // @import "vendors/default";
+// @import "vendors/sanitize"; // Sanitize.css
+
+// 3. Base stuff // @import "base/default";
+@import "base/root"; // Standard reset and base settings
+@import "base/typography";
+@import "base/accessibility";
+
+// 4. Layout-related sections // @import "layout/default";
+
+// 5. Components // @import "components/default";
+
+// 6. Page-specific styles // @import "pages/default";
+
+// 7. Themes // @import "themes/default";

@@ -1,0 +1,109 @@
+//
+// Fluid typography mixing ~ adapted from various authors
+//
+// @package     Page Ruler Redux
+// @subpackage  Mixins
+// @author      Esteban Rocha
+// @link        https://github.com/Esteban-Rocha
+// @since       1.0.0
+//
+// Strips the unit of value of any unit, leaving only the pure `value`
+// @function   strip-unit($value)
+// @param      {Value} $value - Value to remove unit from
+// @return     {Value} - Unitless Value
+//
+//
+
+@function strip-unit($value) {
+	@if type-of($value) == "number" and not unitless($value) {
+		@return $value / ($value * 0 + 1);
+	} @else {
+		@return $value;
+	}
+}
+
+//
+// @mixin fluid-type Auto calculates the fluid values and generates perfect calc() resize
+// Width version
+//
+// @function   fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value, $overwrite)
+// @param      {Propierty} $properties - Properties to work on fluid calc
+// @param      {Min Viewport Size} $min-vw - Value of minimum viewport screen supported
+// @param      {Max Viewport Size} $max-vw - Value of maximum viewport screen supported
+// @param      {Min value of property} $min-value - Minimum Value of the property
+// @param      {Max value of property} $max-value - Maximum Value of the property
+// @param      {Override} $override - Bool to define if !important clause will be used
+// @return     {Value + Fluid Calc Function} - Value auto formatted and pre calculed to be fluid
+//
+@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value, $override) {
+	$importantOver: null;
+
+	@if $override == true {
+		$importantOver: !important;
+	}
+
+	@each $property in $properties {
+		#{$property}: $min-value $importantOver;
+	}
+
+	@media (min-width: $min-vw) {
+		@each $property in $properties {
+			#{$property}: calc(
+					#{$min-value} +
+						#{strip-unit($max-value - $min-value)} *
+						(100vw - #{$min-vw}) /
+						#{strip-unit($max-vw - $min-vw)}
+				)
+				$importantOver;
+		}
+	}
+
+	@media (min-width: $max-vw) {
+		@each $property in $properties {
+			#{$property}: $max-value $importantOver;
+		}
+	}
+}
+
+//
+// @mixin fluid-type Auto calculates the fluid values and generates perfect calc() resize
+// Height version
+//
+// @function   fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value, $overwrite)
+// @param      {Propierty} $properties - Properties to work on fluid calc
+// @param      {Min Viewport Size} $min-vw - Value of minimum viewport screen supported
+// @param      {Max Viewport Size} $max-vw - Value of maximum viewport screen supported
+// @param      {Min value of property} $min-value - Minimum Value of the property
+// @param      {Max value of property} $max-value - Maximum Value of the property
+// @param      {Override} $override - Bool to define if !important clause will be used
+// @return     {Value + Fluid Calc Function} - Value auto formatted and pre calculed to be fluid
+//
+@mixin fluid-type-h($properties, $min-vw, $max-vw, $min-value, $max-value, $override) {
+	$importantOver: null;
+
+	@if $override == true {
+		$importantOver: !important;
+	}
+
+	@each $property in $properties {
+		#{$property}: $min-value $importantOver;
+	}
+
+	@media (min-height: $min-vw) {
+		@each $property in $properties {
+			#{$property}: calc(
+					#{$min-value} +
+						#{strip-unit($max-value - $min-value)} *
+						(100vw - #{$min-vw}) /
+						#{strip-unit($max-vw - $min-vw)}
+				)
+				$importantOver;
+		}
+	}
+
+	@media (min-height: $max-vw) {
+		@each $property in $properties {
+			#{$property}: $max-value $importantOver;
+		}
+	}
+}

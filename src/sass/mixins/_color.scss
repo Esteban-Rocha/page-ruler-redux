@@ -1,0 +1,47 @@
+//
+// Colors map Funtion to retrieve bi-dimensional color map
+//
+// @package     Page Ruler Redux
+// @subpackage  Mixins
+// @author      Esteban Rocha
+// @link        https://github.com/Esteban-Rocha
+// @since       1.0.0
+//
+// @function color($key, $tone: base)
+// @param    string $key => color
+// @return   map-get(map-get($colors, $key), $tone);
+//
+
+/// Function - Color map, It will retrieve bi-dimensional color from custom SCSS map
+///
+/// @author      Esteban Rocha
+///
+/// @link        https://github.com/Esteban-Rocha
+///
+/// @access public
+///
+/// @param {Color}  $key           [null] Color key value
+/// @param {String} $layout        [base] Choose a color variation @see map--colors.scss
+///
+/// @example scss - SCSS Usage
+///
+///   .element {
+///	    //         $color, $variation
+///     color: color(gray, light1);
+///   }
+///
+/// @example css - CSS Output
+///
+///   .element {
+///     color: #b3babc;
+///   }
+///
+/// @since 1.0.0 @function
+@function color($key, $tone: base) {
+	@if map-has-key($colors, $key) {
+		@return map-get(map-get($colors, $key), $tone);
+	} @else {
+		@warn "Unknown `#{$key}` in $colors.";
+		@return null;
+	}
+}

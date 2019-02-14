@@ -4,47 +4,6 @@
 ## @website https://github.com/Esteban-Rocha
 ####
 
-#=================================================
-# WordPress
-#=================================================
-
-*.log
-wp-config*.php
-wp-cli.local.yml
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/backupwordpress-*/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
-
-.htaccess
-sitemap.xml
-sitemap.xml.gz
-.ftpquota
-
-#=================================================
-# WPEngine
-#=================================================
-.smushit-status
-_wpeprivate
-wp-content/object-cache.php
-wp-content/mu-plugins/mu-plugin.php
-wp-content/mu-plugins/slt-force-strong-passwords.php
-wp-content/mu-plugins/stop-long-comments.php
-wp-content/mu-plugins/force-strong-passwords*
-wp-content/mu-plugins/wpengine-common*
-
-#=================================================
-# Pantheon
-#=================================================
-# Avoid accidental modification of pantheon.upstream.yml in sites
-# created from this upstream
-pantheon.upstream.yml
-
 # Logs and databases #
 ######################
 *.log
@@ -67,6 +26,8 @@ Thumbs.db
 # Custom
 #=================================================
 yarn-install
+gulp/
+dist/
 
 #=================================================
 # Archives

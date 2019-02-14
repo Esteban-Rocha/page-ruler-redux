@@ -1,0 +1,37 @@
+//
+// Bi-Dimensional Fonts Map
+//
+// @package     Page Ruler Redux
+// @subpackage  Mixins
+// @author      Esteban Rocha
+// @link        https://github.com/Esteban-Rocha
+// @since       1.0.0
+//
+// @max-depth  2
+// @return     map-get(map-get($Fonts, $key), $style);
+//
+
+$fonts: (
+	poppins: (
+		bold: "Poppins-Bold",
+		italic: "Poppins-Italic",
+		regular: "Poppins-Regular",
+		medium: "Poppins-Medium",
+		semi-bold: "Poppins-SemiBold"
+	)
+);
+
+//
+// Fonts map function to retrieve bi-dimensional fonts map
+//
+// @param   string $key => font
+// @return  map-get(map-get($font, $key), $style);
+//
+@function font-f($key, $style: regular) {
+	@if map-has-key($fonts, $key) {
+		@return map-get(map-get($fonts, $key), $style);
+	} @else {
+		@warn "Unknown `#{$key}` in $fonts.";
+		@return null;
+	}
+}

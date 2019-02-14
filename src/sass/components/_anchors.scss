@@ -1,0 +1,76 @@
+//
+// Anchors Components Layout
+//
+// @package     Page Ruler Redux
+// @subpackage  Components
+// @author      Esteban Rocha
+// @link        https://github.com/Esteban-Rocha
+//
+// @since       1.0.0
+//
+
+// Animated text decoration on anchors
+.underline_animated {
+	position: relative;
+
+	&::before {
+		bottom: 0;
+		content: "";
+		height: 1px;
+		left: 0;
+		position: absolute;
+		transform: scaleX(0);
+		transition: transform 0.3s ease-in-out 0s, visibility 0.3s ease-in-out 0s;
+		visibility: hidden;
+		width: 100%;
+	}
+
+	&:hover {
+		&::before {
+			// Transform
+			transform: scaleX(1);
+			visibility: visible;
+		}
+	}
+}
+
+// < - Colors ->
+// White
+.W {
+	&::before {
+		background-color: color(white);
+	}
+
+	&:hover {
+		color: color(white);
+	}
+}
+
+// Blue
+.B {
+	&::before {
+		background-color: color(blue);
+	}
+
+	&:hover {
+		color: color(blue);
+	}
+}
+
+// Gray
+.G {
+	&::before {
+		background-color: color(gray, dark1);
+	}
+
+	&:hover {
+		color: color(gray, dark1);
+	}
+}
+
+// Gray Light
+.GL {
+	&::before {
+		background-color: color(gray, light1);
+	}
+}

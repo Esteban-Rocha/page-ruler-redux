@@ -1,0 +1,75 @@
+//
+// Heading Borders Mixins
+//
+// @package     Page Ruler Redux
+// @subpackage  Mixins
+// @author      Esteban Rocha
+// @link        https://github.com/Esteban-Rocha
+// @since       1.0.0
+//
+
+/// Mixin - Top border, It will generate a reusable component to render heading top
+/// borders
+/// @author      Esteban Rocha
+///
+/// @link        https://github.com/Esteban-Rocha
+///
+/// @access public
+///
+/// @param {Color}  $color         [null] Border Color
+/// @param {Lenght} $margin-top    [null] top margin of parent html element
+/// @param {Lenght} $height        [null] Height/Thickness of border
+/// @param {Lenght} $top           [null] Inner distance relative to parent element
+/// @param {Lenght} $width         [null] Width of the border
+/// @param {String} $layout        ['normal'/'center'] Use centered layout || left aligned layout
+///
+/// @example scss - SCSS Usage
+///   //                                   $color, $margin-top, $height, $top, $width, $layout
+///   @include border-top(#000, 1.875rem, 0.125rem, -1rem, 6.25rem, normal);
+///
+/// @example css - CSS Output
+///
+///   .foo {
+///     margin-top: 1.875rem;
+///     position: relative;
+///     width: 100%;
+///   }
+///   .foo::after {
+///     background: #000;
+///     top: -1rem;
+///     content: "";
+///     display: block;
+///     height: 0.125rem;
+///     left: 0;
+///     position: absolute;
+///     transition: background-color 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+///     width: 6.25rem;
+///   }
+///
+/// @since 1.0.0
+@mixin border-top($color, $margin-top, $height, $top, $width, $layout) {
+	margin-top: #{$margin-top};
+	position: relative;
+	width: 100%;
+
+	&::before {
+		background: #{$color};
+		content: "";
+		display: block;
+		height: #{$height};
+		@if $layout == "normal" {
+			left: 0;
+		} @else if $layout == "center" {
+			left: 25%;
+			right: 25%;
+		} @else if $layout == "right" {
+			right: 0;
+		} @else {
+			left: 0;
+		}
+		position: absolute;
+		top: #{$top};
+		transition: background-color 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+		width: #{$width};
+	}
+}
