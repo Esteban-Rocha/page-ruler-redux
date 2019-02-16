@@ -197,6 +197,7 @@ input[id^="page-ruler"][type="checkbox"] {
 }
 #page-ruler-toolbar input[type="number"] {
 	background-color: #fff !important;
+	color: color(black) !important;
 	font-family: $system-fonts !important;
 	max-height: 20px !important;
 	padding: 3px !important;
