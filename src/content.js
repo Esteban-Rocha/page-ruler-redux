@@ -481,10 +481,6 @@ window.__PageRuler = {
             e.stopPropagation();
             if (_this.tracking && e.target.tagName.toLowerCase() !== "html") {
                 _this.setTracking(false, true);
-                chrome.runtime.sendMessage({
-                    action: "trackEvent",
-                    args: [ "Action", "Element Mode Click" ]
-                });
             }
         });
     }, {
@@ -515,10 +511,6 @@ window.__PageRuler = {
             this.toolbar.dom.style.setProperty("height", pr.Util.px(height), "important");
             this.toolbar.shiftPage(height);
             this.setTracking(true, true);
-            chrome.runtime.sendMessage({
-                action: "trackEvent",
-                args: [ "Action", "Element Toolbar", "Show" ]
-            });
         },
         hide: function() {
             this.dom.style.removeProperty("display");
@@ -529,10 +521,6 @@ window.__PageRuler = {
             this.els.helpContainer.style.removeProperty("display");
             this.els.elementContainer.style.setProperty("display", "none", "important");
             this.els.navigationContainer.style.setProperty("display", "none", "important");
-            chrome.runtime.sendMessage({
-                action: "trackEvent",
-                args: [ "Action", "Element Toolbar", "Hide" ]
-            });
         },
         generateHelpContainer: function() {
             var container = pr.El.createEl("div", {
@@ -569,10 +557,6 @@ window.__PageRuler = {
             }, {
                 click: function(e) {
                     _this.setElement(_this.element.dom);
-                    chrome.runtime.sendMessage({
-                        action: "trackEvent",
-                        args: [ "Action", "Element Click", "Element" ]
-                    });
                 }
             });
             this.els.element = this.generateTagContainer("element");
@@ -592,10 +576,6 @@ window.__PageRuler = {
             }, {
                 click: function(e) {
                     _this.setElement(pr.El.getParentNode(_this.element.dom));
-                    chrome.runtime.sendMessage({
-                        action: "trackEvent",
-                        args: [ "Action", "Element Click", "Parent" ]
-                    });
                 }
             });
             var upImg = pr.El.createEl("img", {
@@ -610,10 +590,6 @@ window.__PageRuler = {
             }, {
                 click: function(e) {
                     _this.setElement(pr.El.getChildNode(_this.element.dom));
-                    chrome.runtime.sendMessage({
-                        action: "trackEvent",
-                        args: [ "Action", "Element Click", "Child" ]
-                    });
                 }
             });
             var downImg = pr.El.createEl("img", {
@@ -628,10 +604,6 @@ window.__PageRuler = {
             }, {
                 click: function(e) {
                     _this.setElement(pr.El.getPreviousSibling(_this.element.dom));
-                    chrome.runtime.sendMessage({
-                        action: "trackEvent",
-                        args: [ "Action", "Element Click", "Previous" ]
-                    });
                 }
             });
             var previousImg = pr.El.createEl("img", {
@@ -646,10 +618,6 @@ window.__PageRuler = {
             }, {
                 click: function(e) {
                     _this.setElement(pr.El.getNextSibling(_this.element.dom));
-                    chrome.runtime.sendMessage({
-                        action: "trackEvent",
-                        args: [ "Action", "Element Click", "Next" ]
-                    });
                 }
             });
             var nextImg = pr.El.createEl("img", {
@@ -686,10 +654,6 @@ window.__PageRuler = {
             }, {
                 change: function(e) {
                     _this.setTracking(this.checked, false);
-                    chrome.runtime.sendMessage({
-                        action: "trackEvent",
-                        args: [ "Action", "Tracking Mode Element", this.checked && "On" || "Off" ]
-                    });
                 }
             });
             this.els.trackingInput = input;
@@ -717,10 +681,6 @@ window.__PageRuler = {
             } else {
                 this.toolbar.ruler.ruler.classList.remove("tracking");
             }
-            chrome.runtime.sendMessage({
-                action: "trackEvent",
-                args: [ "Action", "Tracking Mode", tracking && "On" || "Off" ]
-            });
             if (!!toggleInput) {
                 this.els.trackingInput.checked = tracking;
             }
@@ -1619,17 +1579,9 @@ window.__PageRuler = {
             });
             var width = this.generatePixelInput("width", pr.Util.locale("toolbarWidth"), function(e) {
                 _this.ruler.setWidth(this.value);
-                chrome.runtime.sendMessage({
-                    action: "trackEvent",
-                    args: [ "Action", "Ruler Change", "Width" ]
-                });
             });
             var height = this.generatePixelInput("height", pr.Util.locale("toolbarHeight"), function(e) {
                 _this.ruler.setHeight(this.value);
-                chrome.runtime.sendMessage({
-                    action: "trackEvent",
-                    args: [ "Action", "Ruler Change", "Height" ]
-                });
             });
             pr.El.appendEl(container, [ width, height ]);
             return container;
@@ -1642,31 +1594,15 @@ window.__PageRuler = {
             });
             var left = this.generatePixelInput("left", pr.Util.locale("toolbarLeft"), function(e) {
                 _this.ruler.setLeft(this.value, true);
-                chrome.runtime.sendMessage({
-                    action: "trackEvent",
-                    args: [ "Action", "Ruler Change", "Left" ]
-                });
             });
             var top = this.generatePixelInput("top", pr.Util.locale("toolbarTop"), function(e) {
                 _this.ruler.setTop(this.value, true);
-                chrome.runtime.sendMessage({
-                    action: "trackEvent",
-                    args: [ "Action", "Ruler Change", "Top" ]
-                });
             });
             var right = this.generatePixelInput("right", pr.Util.locale("toolbarRight"), function(e) {
                 _this.ruler.setRight(this.value, true);
-                chrome.runtime.sendMessage({
-                    action: "trackEvent",
-                    args: [ "Action", "Ruler Change", "Right" ]
-                });
             });
             var bottom = this.generatePixelInput("bottom", pr.Util.locale("toolbarBottom"), function(e) {
                 _this.ruler.setBottom(this.value, true);
-                chrome.runtime.sendMessage({
-                    action: "trackEvent",
-                    args: [ "Action", "Ruler Change", "Bottom" ]
-                });
             });
             pr.El.appendEl(container, [ left, top, right, bottom ]);
             return container;

@@ -1,0 +1,611 @@
+/*!
+Theme Name: Esteban Rocha Portfolio
+Theme URI: https://rocha.codes/
+Author: Esteban Rocha
+Author URI: https://rocha.codes/
+Description: Custom theme for Page Ruler Redux
+Version: 1.0.0
+License URI: LICENSE
+Text Domain: Page Ruler Redux
+*/
+*[id^="page-ruler"] {
+  cursor: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  vertical-align: baseline !important;
+  font-size: 12px !important;
+  font-family: "FuraCode Nerd Font", "-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  font-weight: normal !important;
+  position: relative !important;
+  display: inline !important;
+  color: #000000 !important;
+  border: none !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  min-height: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0px !important;
+  -moz-background-clip: padding;
+  border-radius: 0px !important;
+  background-clip: padding-box;
+  direction: ltr !important; }
+
+*[id^="page-ruler-"] {
+  width: auto !important; }
+
+div[id^="page-ruler"],
+p[id^="page-ruler"],
+h1[id^="page-ruler"],
+h2[id^="page-ruler"],
+h3[id^="page-ruler"],
+h4[id^="page-ruler"],
+h5[id^="page-ruler"] {
+  display: block !important; }
+
+input[id^="page-ruler"] {
+  -webkit-appearance: textfield !important;
+  -moz-appearance: textfield !important;
+  appearance: textfield !important; }
+
+input[id^="page-ruler"][type="checkbox"] {
+  -webkit-appearance: checkbox !important;
+  -moz-appearance: checkbox !important;
+  appearance: checkbox !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle {
+  position: relative !important;
+  width: 70px !important;
+  display: inline-block !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle.lang_pt,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle.lang_pt {
+  width: 110px !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle.lang_es,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle.lang_es {
+  width: 125px !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle input,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle input {
+  display: none !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle input:checked + label .page-ruler-inner,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle input:checked + label .page-ruler-inner {
+  margin-left: 0 !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle input:checked + label .page-ruler-switch,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle input:checked + label .page-ruler-switch {
+  right: 0px !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle label,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle label {
+  display: block !important;
+  overflow: hidden !important;
+  cursor: pointer !important;
+  border: 2px solid #222222 !important;
+  -webkit-border-radius: 20px !important;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 20px !important;
+  -moz-background-clip: padding;
+  border-radius: 20px !important;
+  background-clip: padding-box;
+  padding-right: 0px !important;
+  margin-left: 0px !important;
+  height: 26px !important;
+  z-index: 1 !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner,
+#page-ruler-toolbar .page-ruler-checkbox-toggle label .page-ruler-switch,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle label .page-ruler-switch {
+  cursor: pointer !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner {
+  width: 200% !important;
+  margin-left: -100% !important;
+  -webkit-transition: margin 0.3s ease-in 0s !important;
+  -moz-transition: margin 0.3s ease-in 0s !important;
+  -o-transition: margin 0.3s ease-in 0s !important;
+  transition: margin 0.3s ease-in 0s !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner:after,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner:after,
+#page-ruler-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner:before,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner:before {
+  float: left !important;
+  width: 50% !important;
+  height: 30px !important;
+  padding: 0px !important;
+  line-height: 24px !important;
+  font-size: 12px !important;
+  color: #ffffff !important;
+  font-family: "FuraCode Nerd Font", "-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-weight: bold !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner:before,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner:before {
+  content: "__MSG_elementToolbarToggleOn__" !important;
+  text-transform: uppercase !important;
+  padding-left: 10px !important;
+  background-color: #e97415 !important;
+  color: #ffffff !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner:after,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle label .page-ruler-inner:after {
+  content: "__MSG_elementToolbarToggleOff__" !important;
+  text-transform: uppercase !important;
+  padding-right: 10px !important;
+  background-color: #4c4c4c !important;
+  color: #ffffff !important;
+  text-align: right !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle label .page-ruler-switch,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle label .page-ruler-switch {
+  width: 16px !important;
+  margin: 3px !important;
+  background: #ffffff !important;
+  border: 2px solid #999999 !important;
+  -webkit-border-radius: 20px !important;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 20px !important;
+  -moz-background-clip: padding;
+  border-radius: 20px !important;
+  background-clip: padding-box;
+  position: absolute !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  right: 40px !important;
+  -webkit-transition: all 0.3s ease-in 0s !important;
+  -moz-transition: all 0.3s ease-in 0s !important;
+  -o-transition: all 0.3s ease-in 0s !important;
+  transition: all 0.3s ease-in 0s !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle label .page-ruler-switch.lang_pt,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle label .page-ruler-switch.lang_pt {
+  right: 80px !important; }
+
+#page-ruler-toolbar .page-ruler-checkbox-toggle label .page-ruler-switch.lang_pt,
+#page-ruler-element-toolbar .page-ruler-checkbox-toggle label .page-ruler-switch.lang_pt {
+  right: 95px !important; }
+
+#page-ruler-toolbar {
+  background-color: #303030 !important;
+  cursor: default !important;
+  height: 32px !important;
+  left: 0px !important;
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 2000005 !important; }
+
+#page-ruler-toolbar.page-ruler-top {
+  top: 0px; }
+
+#page-ruler-toolbar.page-ruler-bottom {
+  bottom: 0px; }
+
+#page-ruler-toolbar label {
+  margin-left: 10px !important;
+  font-weight: bold !important;
+  padding-right: 5px !important;
+  cursor: default !important;
+  color: #eeeeee !important; }
+
+#page-ruler-toolbar input[type="number"] {
+  background-color: #fff !important;
+  color: #000 !important;
+  font-family: "FuraCode Nerd Font", "-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  max-height: 20px !important;
+  padding: 3px !important;
+  text-align: right !important;
+  width: 55px !important; }
+
+#page-ruler-toolbar input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: inner-spin-button !important;
+  -moz-appearance: inner-spin-button !important;
+  appearance: inner-spin-button !important; }
+
+#page-ruler-toolbar input[type="color"] {
+  width: 40px !important;
+  height: 20px !important;
+  -webkit-border-radius: 2px !important;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 2px !important;
+  -moz-background-clip: padding;
+  border-radius: 2px !important;
+  background-clip: padding-box;
+  background: #303030; }
+
+#page-ruler-toolbar .page-ruler-container {
+  display: inline-block !important;
+  padding-top: 5px !important;
+  float: left !important; }
+
+#page-ruler-toolbar .page-ruler-close-container,
+#page-ruler-toolbar .page-ruler-dock-container,
+#page-ruler-toolbar .page-ruler-help-container {
+  float: right !important;
+  padding: 5px !important; }
+
+#page-ruler-toolbar .page-ruler-close-container img,
+#page-ruler-toolbar .page-ruler-dock-container img,
+#page-ruler-toolbar .page-ruler-help-container img {
+  cursor: pointer !important; }
+
+#page-ruler-toolbar .page-ruler-px-container {
+  display: inline !important;
+  position: relative !important;
+  /*&:after {
+  		content:	'px' !important;
+  		position:	absolute !important;
+  		right:		17px !important;
+  		top:		0px !important;
+  		color:		#aaaaaa !important;
+  		.user-select(~'none !important');
+  	}*/ }
+
+#page-ruler-toolbar .page-ruler-element-toggle-container {
+  float: left !important;
+  height: 32px !important;
+  line-height: 30px !important;
+  background-color: #e97415 !important;
+  padding-top: 2px !important;
+  cursor: pointer !important; }
+
+#page-ruler-toolbar .page-ruler-element-toggle-container span {
+  cursor: pointer !important;
+  padding-left: 5px !important; }
+
+#page-ruler-toolbar .page-ruler-element-toggle-container img {
+  padding: 0px 5px !important;
+  top: 4px !important;
+  cursor: pointer !important; }
+
+#page-ruler-toolbar #page-ruler-toolbar-guides-container {
+  padding-top: 2px !important; }
+
+#page-ruler-toolbar #page-ruler-toolbar-guides-container > label {
+  top: -8px !important; }
+
+#page-ruler-toolbar #page-ruler-toolbar-borderSearch-container {
+  padding-top: 2px !important; }
+
+#page-ruler-toolbar #page-ruler-toolbar-borderSearch-container > label {
+  top: -8px !important; }
+
+#page-ruler-toolbar #page-ruler-toolbar-container {
+  height: 30px !important;
+  display: table-cell !important;
+  vertical-align: middle !important;
+  margin-top: inherit !important;
+  width: 100% !important;
+  float: left !important; }
+
+#page-ruler-element-toolbar {
+  background-color: #4c4c4c !important;
+  height: 32px !important;
+  line-height: 30px !important;
+  vertical-align: middle !important;
+  float: left !important;
+  width: 100% !important;
+  display: none !important; }
+
+#page-ruler-element-toolbar label {
+  color: #ffffff !important; }
+
+#page-ruler-element-toolbar span {
+  font-weight: bold !important; }
+
+#page-ruler-element-toolbar span.page-ruler-tag {
+  color: #eeeeee !important; }
+
+#page-ruler-element-toolbar span.page-ruler-id {
+  color: #43dd2e !important; }
+
+#page-ruler-element-toolbar span.page-ruler-cls {
+  color: #43b6ca !important; }
+
+#page-ruler-element-toolbar .page-ruler-container {
+  padding-top: 0 !important; }
+
+#page-ruler-element-toolbar .page-ruler-help-container {
+  padding-left: 20px !important;
+  background: transparent url("images/help.png") no-repeat left center !important;
+  margin-left: 10px !important;
+  flex: 1 !important; }
+
+#page-ruler-element-toolbar .page-ruler-nav-container {
+  padding-left: 10px !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
+  white-space: nowrap !important; }
+
+#page-ruler-element-toolbar .page-ruler-nav-container * {
+  cursor: pointer !important; }
+
+#page-ruler-element-toolbar .page-ruler-nav-container span {
+  font-size: 11px !important; }
+
+#page-ruler-element-toolbar .page-ruler-nav-container img {
+  top: 3px !important;
+  padding-right: 2px !important; }
+
+#page-ruler-element-toolbar .page-ruler-nav-container > div {
+  display: inline-block !important; }
+
+#page-ruler-element-toolbar #page-ruler-element-toolbar-element {
+  padding-left: 10px !important; }
+
+#page-ruler-element-toolbar #page-ruler-element-toolbar-element span {
+  font-size: 13px !important; }
+
+#page-ruler-element-toolbar #page-ruler-element-toolbar-navigate-container {
+  padding-left: 10px !important;
+  flex: 1 !important;
+  display: flex !important; }
+
+#page-ruler-element-toolbar #page-ruler-element-toolbar-tracking-mode-container {
+  float: right !important;
+  padding-top: 2px !important; }
+
+#page-ruler-element-toolbar #page-ruler-element-toolbar-tracking-mode-container > label {
+  top: -8px !important; }
+
+#page-ruler-mask {
+  width: 100% !important;
+  height: 100% !important;
+  position: fixed !important;
+  top: 0px !important;
+  left: 0px !important;
+  z-index: 2000004 !important;
+  cursor: url("images/crosshair.png") 12 12, crosshair !important; }
+
+#page-ruler {
+  position: absolute !important;
+  z-index: 2000005 !important;
+  border-width: 1px !important;
+  border-style: dashed !important; }
+
+#page-ruler .page-ruler-container {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  cursor: move !important; }
+
+#page-ruler .page-ruler-container .page-ruler-corner {
+  position: absolute !important;
+  width: 16px !important;
+  height: 16px !important;
+  border-width: 1px !important;
+  border-style: dashed !important; }
+
+#page-ruler .page-ruler-container .page-ruler-edge {
+  position: absolute !important; }
+
+#page-ruler .page-ruler-container .page-ruler-top {
+  top: 0px !important;
+  left: 0px !important;
+  height: 8px !important;
+  width: 100% !important;
+  cursor: n-resize !important; }
+
+#page-ruler .page-ruler-container .page-ruler-bottom {
+  bottom: 0px !important;
+  left: 0px !important;
+  height: 8px !important;
+  width: 100% !important;
+  cursor: n-resize !important; }
+
+#page-ruler .page-ruler-container .page-ruler-left {
+  top: 0px !important;
+  left: 0px !important;
+  height: 100% !important;
+  width: 8px !important;
+  cursor: w-resize !important; }
+
+#page-ruler .page-ruler-container .page-ruler-right {
+  top: 0px !important;
+  right: 0px !important;
+  height: 100% !important;
+  width: 8px !important;
+  cursor: w-resize !important; }
+
+#page-ruler .page-ruler-container .page-ruler-top-left {
+  top: 0px !important;
+  left: 0px !important;
+  border-left: none !important;
+  border-top: none !important;
+  cursor: nw-resize !important; }
+
+#page-ruler .page-ruler-container .page-ruler-top-right {
+  top: 0px !important;
+  right: 0px !important;
+  border-right: none !important;
+  border-top: none !important;
+  cursor: ne-resize !important; }
+
+#page-ruler .page-ruler-container .page-ruler-bottom-left {
+  bottom: 0px !important;
+  left: 0px !important;
+  border-left: none !important;
+  border-bottom: none !important;
+  cursor: sw-resize !important; }
+
+#page-ruler .page-ruler-container .page-ruler-bordersearch {
+  cursor: pointer !important; }
+
+#page-ruler .page-ruler-container .page-ruler-bottom-right {
+  bottom: 0px !important;
+  right: 0px !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  cursor: se-resize !important; }
+
+#page-ruler .page-ruler-container .page-ruler-bordersearch-ud-left-top {
+  top: -16px !important;
+  left: 0px !important;
+  content: url("images/arrow-up.png"); }
+
+#page-ruler .page-ruler-container .page-ruler-bordersearch-ud-right-top {
+  top: -16px !important;
+  right: 0px !important;
+  content: url("images/arrow-up.png"); }
+
+#page-ruler .page-ruler-container .page-ruler-bordersearch-lr-left-top {
+  top: 0px !important;
+  left: -16px !important;
+  content: url("images/arrow-left.png"); }
+
+#page-ruler .page-ruler-container .page-ruler-bordersearch-lr-left-bottom {
+  bottom: 0px !important;
+  left: -16px !important;
+  content: url("images/arrow-left.png"); }
+
+#page-ruler .page-ruler-container .page-ruler-bordersearch-lr-right-top {
+  top: 0px !important;
+  right: -16px !important;
+  content: url("images/arrow-right.png"); }
+
+#page-ruler .page-ruler-container .page-ruler-bordersearch-lr-right-bottom {
+  bottom: 0px !important;
+  right: -16px !important;
+  content: url("images/arrow-right.png"); }
+
+#page-ruler .page-ruler-container .page-ruler-bordersearch-ud-left-bottom {
+  bottom: -16px !important;
+  left: 0px !important;
+  content: url("images/arrow-down.png"); }
+
+#page-ruler .page-ruler-container .page-ruler-bordersearch-ud-right-bottom {
+  bottom: -16px !important;
+  right: 0px !important;
+  content: url("images/arrow-down.png"); }
+
+#page-ruler.page-ruler-tracking .page-ruler-container {
+  cursor: pointer !important; }
+
+#page-ruler.page-ruler-tracking .page-ruler-container .page-ruler-edge,
+#page-ruler.page-ruler-tracking .page-ruler-container .page-ruler-corner {
+  cursor: pointer !important; }
+
+#page-ruler-guides {
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+  cursor: url("images/crosshair.png") 12 12, crosshair !important; }
+
+#page-ruler-guides .page-ruler-guide {
+  position: absolute !important;
+  border-width: 1px !important;
+  border-style: dashed !important;
+  z-index: 2000005 !important;
+  cursor: url("images/crosshair.png") 12 12, crosshair !important; }
+
+#page-ruler-guides #page-ruler-guide-top-left {
+  top: 0px !important;
+  left: 0px !important;
+  border-left: none !important;
+  border-top: none !important; }
+
+#page-ruler-guides #page-ruler-guide-top-right {
+  top: 0px !important;
+  right: 0px !important;
+  border-right: none !important;
+  border-top: none !important; }
+
+#page-ruler-guides #page-ruler-guide-bottom-left {
+  bottom: 0px !important;
+  left: 0px !important;
+  border-left: none !important;
+  border-bottom: none !important; }
+
+#page-ruler-guides #page-ruler-guide-bottom-right {
+  bottom: 0px !important;
+  right: 0px !important;
+  border-right: none !important;
+  border-bottom: none !important; }
+
+@media only screen and (max-width: 1100px) {
+  #page-ruler-toolbar input[type="number"] {
+    width: 40px !important;
+    padding: 3px !important; }
+
+  #page-ruler-toolbar input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important; }
+
+  #page-ruler-toolbar .page-ruler-px-container:after {
+    content: "" !important; }
+
+  #page-ruler-toolbar #page-ruler-toolbar-element-toggle-label {
+    display: none !important; } }
+@media only screen and (max-width: 915px) {
+  #page-ruler-toolbar label {
+    font-size: 11px !important; }
+
+  #page-ruler-toolbar .page-ruler-container {
+    padding-top: 0px !important; }
+
+  #page-ruler-toolbar #page-ruler-toolbar-color-container,
+  #page-ruler-toolbar #page-ruler-toolbar-close-container,
+  #page-ruler-toolbar #page-ruler-toolbar-dock-container,
+  #page-ruler-toolbar #page-ruler-toolbar-help-container {
+    padding-top: 5px !important; }
+
+  #page-ruler-toolbar .page-ruler-px-container {
+    display: inline-block !important;
+    padding-left: 5px !important; }
+
+  #page-ruler-toolbar .page-ruler-px-container label {
+    display: block !important;
+    margin-left: 0px !important;
+    font-size: 10px !important; }
+
+  #page-ruler-toolbar .page-ruler-px-container input {
+    font-size: 10px !important;
+    padding: 1px 3px !important; } }
+@media only screen and (max-width: 630px) {
+  #page-ruler-toolbar-color-container label {
+    display: none !important; }
+
+  #page-ruler-toolbar-color-container input[type="color"] {
+    margin-top: 6px !important;
+    height: 18px !important; }
+
+  #page-ruler-toolbar-guides-container > label {
+    display: none !important; }
+
+  #page-ruler-toolbar-guides-toggle {
+    margin-top: 3px !important;
+    transform: scale(0.8) !important; }
+
+  #page-ruler-toolbar-borderSearch-container > label {
+    display: none !important; }
+
+  #page-ruler-toolbar-borderSearch-toggle {
+    margin-top: 3px !important;
+    transform: scale(0.8) !important; } }
+@media only screen and (max-width: 510px) {
+  #page-ruler-toolbar #page-ruler-toolbar-help-container.page-ruler-container {
+    display: none !important; }
+
+  #page-ruler-toolbar #page-ruler-toolbar-close-container,
+  #page-ruler-toolbar #page-ruler-toolbar-dock-container {
+    padding: 5px 0 !important; } }
+
+/*# sourceMappingURL=content.css.map */
