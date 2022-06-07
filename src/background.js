@@ -10,7 +10,6 @@ var PageRuler = {
         switch (type) {
           case "install":
             console.log("First time install version: ", version);
-            PageRuler.Analytics.trackEvent("Run", "Install", version);
             chrome.storage.sync.set({
                 statistics: true,
                 hide_update_tab: false
@@ -19,12 +18,10 @@ var PageRuler = {
 
           case "update":
             console.log("Update version. From: ", previousVersion, " To: ", version);
-            PageRuler.Analytics.trackEvent("Run", "Update", version);
             break;
 
           default:
             console.log("Existing version run: ", version);
-            PageRuler.Analytics.trackEvent("Run", "Open", version);
             break;
         }
     },
@@ -48,7 +45,6 @@ var PageRuler = {
             type: "enable"
         }, function(success) {
             console.log("enable message for tab #" + tabId + " was sent");
-            PageRuler.Analytics.trackEvent("Action", "Enable");
             chrome.browserAction.setIcon({
                 path: PageRuler.image("browser_action_on.png"),
                 tabId: tabId
@@ -60,7 +56,6 @@ var PageRuler = {
             type: "disable"
         }, function(success) {
             console.log("disable message for tab #" + tabId + " was sent");
-            PageRuler.Analytics.trackEvent("Action", "Disable");
             chrome.browserAction.setIcon({
                 path: PageRuler.image("browser_action.png"),
                 tabId: tabId
@@ -213,7 +208,6 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 
       case "setColor":
         console.log("saving color " + message.color);
-        PageRuler.Analytics.trackEvent("Settings", "Color", message.color);
         chrome.storage.sync.set({
             color: message.color
         });
@@ -230,7 +224,6 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 
       case "setDockPosition":
         console.log("saving dock position " + message.position);
-        PageRuler.Analytics.trackEvent("Settings", "Dock", message.position);
         chrome.storage.sync.set({
             dock: message.position
         });
@@ -247,7 +240,6 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 
       case "setGuides":
         console.log("saving guides visiblity " + message.visible);
-        PageRuler.Analytics.trackEvent("Settings", "Guides", message.visible && "On" || "Off");
         chrome.storage.sync.set({
             guides: message.visible
         });
@@ -263,7 +255,6 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
         break;
 
       case "setBorderSearch":
-        PageRuler.Analytics.trackEvent("Settings", "BorderSearch", message.visible && "On" || "Off");
         chrome.storage.sync.set({
             borderSearch: message.visible
         });
@@ -276,20 +267,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
         });
         break;
 
-      case "trackEvent":
-        console.log("track event message received: ", message.args);
-        PageRuler.Analytics.trackEvent.apply(PageRuler.Analytics, message.args);
-        sendResponse();
-        break;
-
-      case "trackPageview":
-        console.log("track pageview message received: ", message.page);
-        PageRuler.Analytics.trackPageview(message.page);
-        sendResponse();
-        break;
-
       case "openHelp":
-        PageRuler.Analytics.trackEvent([ "Action", "Help Link" ]);
         chrome.tabs.create({
             url: chrome.extension.getURL("update.html") + "#help"
         });
@@ -302,53 +280,3 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 chrome.commands.onCommand.addListener(function(command) {
     console.log("Command:", command);
 });
-
-var _gaq = _gaq || [];
-
-_gaq.push([ "_setAccount", "UA-109739668-3" ]);
-
-(function() {
-    var ga = document.createElement("script");
-    ga.type = "text/javascript";
-    ga.async = true;
-    ga.src = "https://ssl.google-analytics.com/ga.js";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(ga, s);
-})();
-
-(function(pr) {
-    pr.Analytics = {
-        checkEnabled: function(callback) {
-            chrome.storage.sync.get("statistics", function(items) {
-                var enabled = !!items.statistics;
-                if (!enabled) {
-                    console.log("statistics disabled");
-                } else {
-                    callback();
-                }
-            });
-        },
-        trackPageview: function(page) {
-            console.log("Analytics.trackPageview: ", page);
-            this.checkEnabled(function() {
-                var args = [ "_trackPageview", page ];
-                _gaq.push(args);
-                console.log("trackPageview sent: ", args);
-            });
-        },
-        trackEvent: function(category, action, label, value) {
-            console.log("Analytics.trackEvent: ", arguments);
-            this.checkEnabled(function() {
-                var args = [ "_trackEvent", category, action ];
-                if (!!label) {
-                    args.push(label);
-                    if (!!value) {
-                        args.push(value);
-                    }
-                }
-                _gaq.push(args);
-                console.log("trackEvent sent: ", args);
-            });
-        }
-    };
-})(PageRuler);
