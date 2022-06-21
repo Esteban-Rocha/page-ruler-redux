@@ -1,0 +1,368 @@
+{
+
+	"extName": {
+		"message": "Page Ruler Redux",
+		"description": "Extension name"
+	},
+
+	"extShortName": {
+		"message": "Page Ruler R",
+		"description": "Extension short name (maximum 12 characters)"
+	},
+
+	"extDescription": {
+		"message": "모든 web page에서 자를 이용해서 픽셀의 크기, 위치를 파악하고 elements를 재보세요.",
+		"description": "Extension description (maximum 132 characters)"
+	},
+
+	"toolbarWidth": {
+		"message": "넓이",
+		"description": "Label for the width input in the toolbar"
+	},
+
+	"toolbarHeight": {
+		"message": "높이",
+		"description": "Label for the height input in the toolbar"
+	},
+
+	"toolbarLeft": {
+		"message": "왼쪽",
+		"description": "Label for the left input in the toolbar"
+	},
+
+	"toolbarRight": {
+		"message": "오른쪽",
+		"description": "Label for the right input in the toolbar"
+	},
+
+	"toolbarTop": {
+		"message": "위쪽",
+		"description": "Label for the top input in the toolbar"
+	},
+
+	"toolbarBottom": {
+		"message": "아래쪽",
+		"description": "Label for the bottom input in the toolbar"
+	},
+
+	"toolbarColor": {
+		"message":	"색상",
+		"description": "Label for the color picker in the toolbar"
+	},
+
+	"toolbarClose": {
+		"message": "닫기",
+		"description": "Tooltip for the toolbar close button which closes the addon"
+	},
+
+	"toolbarEnableElementMode": {
+		"message": "Element Mode 활성",
+		"description": "Label for the enable element mode button (element as in HTML element)"
+	},
+
+	"toolbarDisableElementMode": {
+		"message": "Element Mode 비활성",
+		"description": "Label for the disable element mode button (element as in HTML element)"
+	},
+
+	"elementToolbarHelp": {
+		"message": "Use tracking mode to move over the page and highlight elements. Click an element to disable tracking mode.",
+		"description": "Help message for the element toolbar"
+	},
+
+	"elementToolbarHighlightedElement": {
+		"message": "Highlighted element",
+		"description": "Title for the highlighted element in tracking mode"
+	},
+
+	"elementToolbarParentNode": {
+		"message": "상위 노드",
+		"description": "Title for the parent node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarChildNode": {
+		"message": "하위 노드",
+		"description": "Title for the child node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarPreviousSibling": {
+		"message": "이전 노드",
+		"description": "Title for the previous sibling node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarNextSibling": {
+		"message": "다음 노드",
+		"description": "Title for the next sibling node of the highlighted element in tracking mode"
+	},
+
+	"elementToolbarTrackingMode": {
+		"message": "Tracking Mode",
+		"description": "Label for the tracking mode toggle button"
+	},
+
+	"elementToolbarToggleOn": {
+		"message": "On",
+		"description": "The on state text for the tracking mode toggle button"
+	},
+
+	"elementToolbarToggleOff": {
+		"message": "Off",
+		"description": "The off state text for the tracking mode toggle button"
+	},
+
+	"optionsPageTitle": {
+		"message": "Page Ruler Redux Options",
+		"description": "Page title for the options page"
+	},
+
+	"optionsStatisticsLabel": {
+		"message": "Send Anonymous Usage Statistics:",
+		"description": "The label for the send anonymous usage statistics checkbox"
+	},
+
+	"optionsStatisticsHelp": {
+		"message": "Information collected contains no personal information and is used solely for the purpose of improving this extension by seeing which sections are used",
+		"description": "Message explaining how the anonymous usage statistics is used"
+	},
+
+    "updatePageTitle": {
+        "message": "Page Ruler Redux Updated",
+        "desciption": "Page title for the update page"
+    },
+
+	"updatePageHeader": {
+		"message": "Page Ruler Redux has been updated to version <span>$VERSION$</span>",
+		"description": "Header message for the page containing the new version number",
+		"placeholders": {
+			"version": {
+				"content": "$1",
+				"example": "2.0.1"
+			}
+		}
+	},
+
+    "updateContributeTitle": {
+        "message": "Contribute to Page Ruler Redux",
+        "desciption": "Title for the contribute side box"
+    },
+
+    "updateTranslateTitle": {
+        "message": "Translate",
+        "desciption": "Title for the translate section in the contribute side box"
+    },
+
+    "updateTranslateDescription": {
+        "message": "Want to use Page Ruler in your own language? Visit the <a href='https://github.com/Esteban-Rocha/page-ruler-redux'>GitHub project page</a> and follow the instructions on how to submit a translation.",
+        "desciption": "Description of how to find out how to contribute a translation"
+    },
+
+    "updateContributorsTitle": {
+        "message": "Contributors",
+        "desciption": "Title for the contributors side box"
+    },
+
+    "updateCodeTitle": {
+        "message": "Code",
+        "desciption": "Title for the code section in the contributors side box"
+    },
+
+	"updateIconsTitle": {
+		"message": "Icons",
+		"desciption": "Title for the icons section in the contributors side box"
+	},
+
+    "updateTranslationsTitle": {
+        "message": "Translations",
+        "desciption": "Title for the translations section in the contributors side box"
+    },
+
+    "updateHistoryTitle": {
+        "message": "Latest Updates",
+        "desciption": "Title for the update history section"
+    },
+
+	"errorLocal": {
+		"message": "보안상의 이유로 local chrome page에서는 확장 프로그램을 실행할 수 없습니다.",
+		"description": "Error message to show when someone tries to run the extension in a chrome extension page"
+	},
+
+	"errorWebStore": {
+		"message": "보안상의 이유로 chrome web store에서는 확장 프로그램을 실행할 수 없습니다.",
+		"description": "Error message to show when someone tries to run the extension in a the chrome web store"
+	},
+
+	// version 2.0.3
+
+	"updatePageHeaderInstall": {
+		"message": "Page Ruler Redux를 설치해주셔서 감사합니다!",
+		"description": "Header message for the update page when a new user installs it"
+	},
+
+	"updateDoNotShowPageAgain": {
+		"message": "이 페이지 다시 표시하지 않음",
+		"description": "Label for the do not show this page again checkbox on the update page"
+	},
+
+	"optionsHideUpdateTabLabel": {
+		"message": "Update Tab 보지 않기:",
+		"description": "The label for the do not show update tab checkbox"
+	},
+
+	"optionsHideUpdateTabHelp": {
+		"message": "새로운 version을 설치할 때마다 update tab 보지 않기",
+		"message": "Do not show the update tab whenever a new version of the extension is installed",
+		"description": "Message explaining how the do not show update tab checkbox is used"
+	},
+
+	// version 2.0.4
+
+	"updateTip": {
+		"message": "<b>Extra Tip:</b> Use the Alt+P shortcut to enable and disable Page Ruler, or assign a different shortcut from the Keyboard Shortcuts section in the Extensions tab",
+		"description": "Message informing users about the shortcut key"
+	},
+
+	// version 2.0.6
+
+	"toolbarDockBottom": {
+		"message": "Dock toolbar을 페이지 하단으로 옮기기",
+		"description": "Tooltip for the dock bottom image"
+	},
+
+	"toolbarDockTop": {
+		"message": "Dock toolbar을 페이지 상단으로 옮기",
+		"description": "Tooltip for the dock top image"
+	},
+
+	"updateKeyBoardShortcuts": {
+		"message": "키보드 단축키",
+		"description": "The title for the keyboard shortcuts section"
+	},
+
+	"updateKeyboardShortcutsToggle": {
+		"message": "<b>Alt + P:</b> Page Ruler 활성화 / 비활성화 ",
+		"description": "The Alt + P shortcut description"
+	},
+
+	"updateKeyboardShortcutsRuler": {
+		"message": "Ruler",
+		"description": "Title for the ruler arrow keys section"
+	},
+
+	"updateKeyboardShortcutsRulerKeys": {
+		"message": "<b>Arrow keys:</b> 화살표 방향으로 1 pixel 이동하기",
+		"description": "Arrow keys shortcut description"
+	},
+
+	"updateKeyboardShortcutsRulerShift": {
+		"message": "<b>+ Shift:</b> 화살표 방향으로 10 pixels 이동하기",
+		"description": "Arrow keys + Shift shortcut description"
+	},
+
+	"updateKeyboardShortcutsRulerCtrl": {
+		"message": "<b>+ Ctrl:</b> 화살표 방향으로 1 pixel 늘이기",
+		"description": "Arrow keys + Ctrl shortcut description"
+	},
+
+	"updateKeyboardShortcutsRulerShiftCtrl": {
+		"message": "<b>+ Shift + Ctrl:</b> 화살표 방향으로 10 pixels 늘이기",
+		"description": "Arrow keys + Shift + Ctrl shortcut description"
+	},
+
+	"updateKeyboardShortcutsRulerCtrlAlt": {
+		"message": "<b>+ Ctrl + Alt:</b> 화살표 방향으로 1 pixel 줄이기",
+		"description": "Arrow keys _Ctrl + Alt shortcut description"
+	},
+
+	"updateKeyboardShortcutsRulerShiftCtrlAl": {
+		"message": "<b>+ Shift + Ctrl + Alt:</b> 화살표 방향으로 10 pixels 줄이기",
+		"description": "Arrow keys + Shift + Alt shortcut description"
+	},
+
+	"updateKeyboardShortcutsToolbar": {
+		"message": "Toolbar Inputs",
+		"description": "Title for toolbar inputs shortcut keys section"
+	},
+
+	"updateKeyboardShortcutsToolbarUp": {
+		"message": "<b>Up Key:</b> value 1 증가시키기",
+		"description": "Up key input shortcut description"
+	},
+
+	"updateKeyboardShortcutsToolbarUpShift": {
+		"message": "<b>+ Shift:</b> value 10 증가시키기",
+		"description": "Up key + Shift input shortcut description"
+	},
+
+	"updateKeyboardShortcutsToolbarDown": {
+		"message": "<b>Down Key:</b> value 1 감소시키기",
+		"description": "Down key input shortcut description"
+	},
+
+	"updateKeyboardShortcutsToolbarDownShift": {
+		"message": "<b>+ Shift:</b> value 10 감소시키기",
+		"description": "Down key + Shift input shortcut description"
+	},
+
+	// version 2.0.7
+
+	"toolbarGuides": {
+		"message":	"Show Guides",
+		"description": "Label for the show guides toggle in the toolbar"
+	},
+
+	// version 2.0.9
+	"toolbarHelp": {
+		"message": "Show help and information",
+		"description": "Label for the help button in the toolbar"
+	},
+
+	"updateKeyBoardShortcutsGeneral": {
+		"message": "단축키",
+		"description": "Title for general shortcuts section"
+	},
+
+	"updateReportIssue": {
+		"message": "이슈 및 의견 보내기",
+		"description": "Report issue button text"
+	},
+
+	"updateSupportTitle": {
+		"message": "Support Page Ruler Redux",
+		"description": "Support section title"
+	},
+
+	"updateSupportText": {
+		"message": "Page Ruler Redux는 앞으로도 항상 <b>무료</b>입니다. 만약 시간이 여유롭다면 리뷰를 남기거나 이 좋은 툴을 다른 사람에게 알려주세요.",
+		"description": "Support section text"
+	},
+
+	"updateSupportText2": {
+		"message": "If you are feeling especially awesome and generous, some users have asked if they can make a donation to say thanks for Page Ruler. I would rather any money went to a cause more worthy than myself so if you would like to say thank you at the same time as helping a charity that is close to my heart it would make my day :)",
+		"description": "Second line of the support section text"
+	},
+
+	"updateSupportReviewText": {
+		"message": "리뷰 작성하기",
+		"description": "Leave review button text"
+	},
+
+	"updateSupportDonateText": {
+		"message": "개발자에게 기부하기",
+		"description": "Donate button text"
+	},
+
+	"updateOtherExtensionsText": {
+		"message": "확장프로그램 더보기",
+		"description": "Other extensions section title"
+	},
+
+	"updatePageTitleInstall": {
+		"message": "Page Ruler Redux Installed",
+		"description": "Page title for the install page"
+	},
+
+	"toolbarBorderSearch": {
+		"message":	"테두리(Border) 검색",
+		"description": "Label for the show border search toggle in the toolbar"
+	}
+}
